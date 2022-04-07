@@ -4,6 +4,8 @@ app = Flask(__name__)
 
 lista_usuarios = ['Paulo', 'Roberto', 'Livia', 'Teresinha']
 
+app.config['SECRET KEY'] = 'e649fa424ae88f4de15c8126a1ef2f33'
+
 @app.route("/")
 def home():
     return render_template('home.html')
